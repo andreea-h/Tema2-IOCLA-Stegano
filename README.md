@@ -10,9 +10,6 @@ Pentru rezolvarea taskului 5, am parcurs matricea incepand cu indexul specificat
 
 Pentru rezolvarea taskului 6, am folosit o variabila neinitializata declarata in .bss ('my_new_img'), rezervand o zona de memorie suficient de mare pentru a putea memora la adresa identificata de aceasta valorile din matricele date in ./inputs. Initial am parcurs matricea primita ca argument de functia 'blur' pentru a copia la adresa 'my_new_img' valorile din matricea nealterata. Apoi am parcurs matricea 'img', pixel cu pixel, exceptand elemenetele de pe prima si ultima coloana, respectiv prima si ultima linie; in cadrul acestei parcurgeri am calculat suma vecinilor fiecarui pixel si am plasat media acestora la adresa corespunzatoare din 'my_new_img'. In final, am mers din nou la adesa identificata prin 'my_new_img', preluand elementele matricii modificate si suprascriind pixelii din matricea initiala 'img' cu cei de la adresa la care am memorat matricea modificata. Am ales sa folosesc o variabila declarata in .bss deoarece daca as fi aplicat modificari element cu element asupra matricii initiale chiar la adresele aferente asociate lui 'img', valorile urmatoare calculate ar depinde de cele anterior calculate, ceea ce duce la rezultate eronate pentru ca modificarile de blur se fac mereu cu elemente din matricea initiala, nealterata.
 
-HOROVEI ANDREEA-GEROGIANA
-325CC
-
 
 
 
